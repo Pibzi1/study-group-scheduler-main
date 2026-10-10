@@ -6,14 +6,20 @@ function createSession() {
     let date =
         document.getElementById("sessionDate").value;
 
-    let list =
-        document.getElementById("sessionList");
+    if(course === "" || date === ""){
+        alert("Enter all fields");
+        return;
+    }
 
     let item =
         document.createElement("li");
 
     item.textContent =
-        course + " - " + date;
+        `${course} - ${date}`;
 
-    list.appendChild(item);
+    document
+        .getElementById("sessionList")
+        .appendChild(item);
+
+    alert("Study session created successfully!");
 }
