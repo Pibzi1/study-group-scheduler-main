@@ -1,1 +1,1 @@
-# study-group-scheduler
+Project uses Agile methodology
