@@ -1,15 +1,24 @@
+HTML
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Group Scheduler</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <h1>Study Group Scheduler</h1>
-    <input id="courseName" placeholder="Course Name">
+    <h2>Create a Study Session</h2>
     
-    <input id="sessionDate" type="date">
+    <input
+    type="text"
+    id="courseName"
+    placeholder="Enter Course Name">
     
+    <input
+    type="date"
+    id="sessionDate">
     <button onclick="createSession()">
         Create Session
     </button>
